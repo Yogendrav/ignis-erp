@@ -15,4 +15,4 @@ end
 puts 'DEFAULT USERS'
 user = User.find_or_create_by_email :name => 'Yogendra', :email => 'yogendra.ogn@gmail.com', :password => 'download', :password_confirmation => 'download'
 puts 'user: ' << user.name
-user.add_role :admin
+user.add_role :superadmin
